@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   template: `
     <p>Welcome to the Crisis Center</p>
     <button (click)="goToMessage($event)">send message</button>
+    <button (click)="goToNotes($event)">note message</button>
   `
 })
 export class CrisisCenterHomeComponent {
@@ -20,6 +21,10 @@ export class CrisisCenterHomeComponent {
           popup: ['compose']
         }
       } ]);   //
+    }
+
+    goToNotes($event: Event) {
+       this.router.navigate(['/superheroes', {outlets: {notes: ['compose']}}]); 
     }
  }
 
