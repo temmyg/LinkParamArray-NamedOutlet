@@ -3,11 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeroListComponent }    from './hero-list.component';
 import { HeroDetailComponent }  from './hero-detail.component';
+import { NotesMessageComponent } from './notes-message.component';
 
 const heroesRoutes: Routes = [
   { path: 'heroes', redirectTo: '/superheroes' },
-  { path: 'hero/:id', redirectTo: '/superhero/:id' },
-  { path: 'superheroes',  component: HeroListComponent },
+  { path: 'hero/:id', redirectTo: '/superhero/:id'  },
+  { path: 'superheroes',  component: HeroListComponent,
+    children: [
+      { 
+        path: 'compose',
+        component: NotesMessageComponent,
+        outlet: 'notes'
+      }]
+    },
   { path: 'superhero/:id', component: HeroDetailComponent }
 ];
 

@@ -1,11 +1,27 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   template: `
     <p>Welcome to the Crisis Center</p>
+    <button (click)="goToMessage($event)">send message</button>
   `
 })
-export class CrisisCenterHomeComponent { }
+export class CrisisCenterHomeComponent {
+    constructor(private route: ActivatedRoute, private router: Router){
+
+    }
+
+    goToMessage($event: Event){
+        //this.router.navigate(['/superheroes/(notes:compose)']);
+        //this.router.navigate(['/superheroes', {outlets: {notes: ['compose']}}]);   //
+        this.router.navigate([ {outlets: {
+          primary: 'superheroes',
+          popup: ['compose']
+        }
+      } ]);   //
+    }
+ }
 
 
 /*

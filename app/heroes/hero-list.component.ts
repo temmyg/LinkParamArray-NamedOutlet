@@ -17,7 +17,7 @@ import { Hero, HeroService }  from './hero.service';
         </a>
       </li>
     </ul>
-
+    <router-outlet name="notes"></router-outlet>
     <button routerLink="/sidekicks">Go to sidekicks</button>
   `
 })

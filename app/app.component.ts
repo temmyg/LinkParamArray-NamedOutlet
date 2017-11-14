@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
       <a routerLink="/superheroes" routerLinkActive="active">Heroes</a>
       <a routerLink="/admin" routerLinkActive="active">Admin</a>
       <a routerLink="/login" routerLinkActive="active">Login</a>
-      <a [routerLink]="[{ outlets: { popup: ['compose','message'] } }]">Contact</a>
+      <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
     </nav>
     <router-outlet></router-outlet>
     <router-outlet name="popup"></router-outlet>

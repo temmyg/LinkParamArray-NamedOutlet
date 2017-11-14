@@ -11,12 +11,12 @@ const appRoutes: Routes = [
   {
     path: 'compose',
     component: ComposeMessageComponent,
-    children: [
+    /*children: [
       {
       path: 'message',
      component: 'CrisisCenterComponent'
       }
-    ],
+    ],*/
     outlet: 'popup'
   },
   {

@@ -5,6 +5,7 @@ import { FormsModule }    from '@angular/forms';
 import { HeroListComponent }    from './hero-list.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 
+import { NotesMessageComponent } from './notes-message.component';
 import { HeroService } from './hero.service';
 
 import { HeroRoutingModule } from './heroes-routing.module';
@@ -17,7 +18,8 @@ import { HeroRoutingModule } from './heroes-routing.module';
   ],
   declarations: [
     HeroListComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    NotesMessageComponent
   ],
   providers: [ HeroService ]
 })
