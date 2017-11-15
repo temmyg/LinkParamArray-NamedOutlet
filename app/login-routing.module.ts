@@ -16,7 +16,7 @@ const loginRoutes: Routes = [
     RouterModule
   ],
   providers: [
-    AuthGuard,
+    //AuthGuard,
     AuthService
   ]
 })

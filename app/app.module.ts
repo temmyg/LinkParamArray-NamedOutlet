@@ -15,6 +15,7 @@ import { LoginComponent }          from './login.component';
 import { PageNotFoundComponent }   from './not-found.component';
 
 import { DialogService }           from './dialog.service';
+import { AuthGuard } from './auth-guard.service';
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { DialogService }           from './dialog.service';
     PageNotFoundComponent
   ],
   providers: [
-    DialogService
+    DialogService,
+    AuthGuard
   ],
   bootstrap: [ AppComponent ]
 })

@@ -2,6 +2,7 @@ import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
 import { AdminComponent }           from './admin.component';
+import { AdminHomeComponent } from './admin-home.component';
 import { AdminDashboardComponent }  from './admin-dashboard.component';
 import { ManageCrisesComponent }    from './manage-crises.component';
 import { ManageHeroesComponent }    from './manage-heroes.component';
@@ -15,6 +16,7 @@ import { AdminRoutingModule }       from './admin-routing.module';
   ],
   declarations: [
     AdminComponent,
+    AdminHomeComponent,
     AdminDashboardComponent,
     ManageCrisesComponent,
     ManageHeroesComponent

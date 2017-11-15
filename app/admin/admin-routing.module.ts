@@ -2,6 +2,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AdminComponent }           from './admin.component';
+import { AdminHomeComponent } from './admin-home.component';
 import { AdminDashboardComponent }  from './admin-dashboard.component';
 import { ManageCrisesComponent }    from './manage-crises.component';
 import { ManageHeroesComponent }    from './manage-heroes.component';
@@ -16,6 +17,7 @@ const adminRoutes: Routes = [
     children: [
       {
         path: '',
+        component: AdminHomeComponent,
         canActivateChild: [AuthGuard],
         children: [
           { path: 'crises', component: ManageCrisesComponent },
