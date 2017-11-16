@@ -21,8 +21,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'admin',
-    loadChildren: 'app/admin/admin.module#AdminModule',
-    canLoad: [AuthGuard]
+    loadChildren: 'app/admin/admin.module#AdminModule'
+    //canLoad: [AuthGuard]
   },
   {
     path: 'crisis-center',
