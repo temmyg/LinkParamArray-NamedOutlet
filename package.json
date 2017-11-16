@@ -1,0 +1,29 @@
+{
+  "name": "linkparameterarray-namedoutlet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "systemjs-angular-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temmyg/LinkParamArray-NamedOutlet.git"
+  },
+  "keywords": [
+    "link",
+    "parameters",
+    "array"
+  ],
+  "author": "AntonZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temmyg/LinkParamArray-NamedOutlet/issues"
+  },
+  "homepage": "https://github.com/temmyg/LinkParamArray-NamedOutlet#readme",
+  "devDependencies": {
+    "@angular/cli": "^1.5.0",
+    "lite-server": "^2.3.0"
+  }
+}
