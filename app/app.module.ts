@@ -34,7 +34,7 @@ import { AuthGuard } from './auth-guard.service';
   ],
   providers: [
     DialogService,
-    AuthGuard
+    //AuthGuard
   ],
   bootstrap: [ AppComponent ]
 })
