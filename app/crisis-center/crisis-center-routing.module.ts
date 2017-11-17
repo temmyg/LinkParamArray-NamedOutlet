@@ -8,11 +8,15 @@ import { CrisisDetailComponent }     from './crisis-detail.component';
 
 import { CanDeactivateGuard }     from '../can-deactivate-guard.service';
 import { CrisisDetailResolver }   from './crisis-detail-resolver.service';
+import { PersonNameResolver } from './person-name-resolver';
 
 const crisisCenterRoutes: Routes = [
   {
     path: '',
     component: CrisisCenterComponent,
+    resolve: {
+      personName: PersonNameResolver
+    },
     children: [
       {
         path: '',
@@ -24,7 +28,7 @@ const crisisCenterRoutes: Routes = [
             canDeactivate: [CanDeactivateGuard],
             resolve: {
               crisis: CrisisDetailResolver
-            }
+            }            
           },
           {
             path: '',

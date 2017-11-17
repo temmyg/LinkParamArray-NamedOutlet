@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   template:  `
@@ -6,8 +7,16 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   `
 })
-export class CrisisCenterComponent { }
-
+export class CrisisCenterComponent implements OnInit{ 
+  constructor(private route: ActivatedRoute){
+      
+  }
+  ngOnInit(){
+      this.route.data.subscribe( data => {
+        console.log('name: ', data.personName);
+      })
+  }
+}
 
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
